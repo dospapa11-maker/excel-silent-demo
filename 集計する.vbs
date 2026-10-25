@@ -26,8 +26,10 @@ Next
 
 If csvFile = "" Then
     MsgBox "【お知らせ】集計対象のCSVファイルが見つかりません。" & vbCrLf & vbCrLf & _
-           "同じフォルダに集計したいCSVファイルを1つ置いてから、" & vbCrLf & _
-           "再度ダブルクリックしてください。", vbExclamation, "CSVファイルなし"
+           "【よくある原因】" & vbCrLf & _
+           "ZIPファイルを「解凍（すべて展開）」せずに、ZIPの中から直接実行していませんか？" & vbCrLf & vbCrLf & _
+           "ZIPファイルを右クリックして「すべて展開」してから、" & vbCrLf & _
+           "展開された通常のフォルダの中の「集計する.vbs」を実行してください。", vbExclamation, "解凍して実行してください"
     WScript.Quit
 End If
 
